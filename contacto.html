@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="/img/depositphotos_68414017-stock-illustration-logo-shop-pet.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/depositphotos_68414017-stock-illustration-logo-shop-pet.jpg" alt="Logo de la página" class="logo">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/acerca.html">Acerca</a></li>
+                <li><a href="/servicios.html">Servicios</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Bienvenido a Mi Sitio de Mascotas</h1>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario" action="enviar.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de Mascota:</label>
+                    <div>
+                        <input type="checkbox" id="perro" name="tipo-mascota" value="perro">
+                        <label for="perro">Perro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gato" name="tipo-mascota" value="gato">
+                        <label for="gato">Gato</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="motivo-contacto">Motivo de Contacto:</label>
+                    <select id="motivo-contacto" name="motivo-contacto" required>
+                        <option value="">Seleccione uno</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="adopcion">Donaciones</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> Teléfono: +123456789</p>
+            <p><i class="fas fa-envelope"></i> Email: info@mimascota.com</p>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.040350346692!2d-122.40701858469885!3d37.784480879759346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580e5733d8dd9%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1635274631863!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, main {
+    padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Galería de mascotas */
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.mascota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mascota:hover {
+    transform: scale(1.05);
+}
+
+.mascota img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Formulario de contacto */
+#contacto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#formulario {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+}
+
+nav, h1 {
+    border-radius: 10px;
+    background-color: #333;
+    padding: 15px;
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto; /* Centra el logo horizontalmente */
+    width: 200px;
+    border-radius: 15%;
+}

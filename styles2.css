@@ -1,0 +1,17 @@
+/* styles.css */
+
+.social-icons {
+    text-align: center; /* Centra los iconos horizontalmente */
+}
+
+.social-icon {
+    display: inline-block; /* Muestra los iconos en línea */
+    margin: 0 10px; /* Añade un pequeño margen entre los iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    color: #333; /* Color de los iconos */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+
+.social-icon:hover {
+    color: #666; /* Cambia el color al pasar el cursor sobre los iconos */
+}
