@@ -10,6 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+   
+    <style>
+        /* Animación de desvanecimiento */
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        
+        .mascota {
+            animation: fade-in 1s ease-out; 
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,13 +41,13 @@
         </nav>  
         <h1>"Haz espacio en tu corazón para un nuevo amigo"</h1>
         
-        <!-- Puedes agregar un menú de navegación aquí -->
+        
     </header>
 
     <main>
         <section id="galeria">
-                  <h2>  --Galeria--</h2>
-           
+            <h2 style="text-align: center;">Galería</h2> 
+
             <div class="mascota">
                 <img src="img/descarga(1).jpeg" alt="Perro">
             </div>
@@ -60,16 +74,19 @@
             <div class="mascota">
                 <img src="img/images(6).jpeg" alt="Perro">
             </div>
-            
+            <div class="mascota">
+                <img src="img/images(7).jpeg" alt="Gato">
+            </div>
             
         </section>
-        
     </main>   
-<div class="social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/?lang=es" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
     <footer>
         <div class="contact-info">
             <p><i class="fas fa-phone"></i> Teléfono: +123456789</p>
